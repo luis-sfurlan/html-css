@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Notícias</a></li>
@@ -20,12 +23,21 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusantium quidem ea nisi voluptas. Saepe ratione architecto laudantium natus non quibusdam neque voluptas, quae, aspernatur voluptatibus magnam! Tempore, dolore eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius perferendis dicta, unde voluptates ipsum sit, totam tenetur sunt animi porro officia ut voluptate aperiam non doloribus tempora neque harum dolore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusantium quidem ea nisi voluptas. Saepe ratione architecto laudantium natus non quibusdam neque voluptas, quae, aspernatur voluptatibus magnam! Tempore, dolore eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius perferendis dicta, unde voluptates ipsum sit, totam tenetur sunt animi porro officia ut voluptate aperiam non doloribus tempora neque harum dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus laborum quod amet. Hic voluptatem eum quod soluta aperiam. Blanditiis quibusdam expedita eius animi? Ipsa dolorem rem fuga unde molestiae!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reprehenderit reiciendis, obcaecati velit ea officiis temporibus id odit suscipit cumque, blanditiis nulla similique minima impedit provident rerum tenetur numquam quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut illo autem aliquid reprehenderit, quia optio esse et pariatur ratione delectus nulla quasi nostrum incidunt repellendus, molestias neque, veniam voluptatibus sint! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dignissimos quod blanditiis explicabo accusamus accusantium cum nobis voluptatum fugit non, omnis minima consequatur praesentium adipisci. Vero rem fuga eum blanditiis?</p>
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reprehenderit reiciendis, obcaecati velit ea officiis temporibus id odit suscipit cumque, blanditiis nulla similique minima impedit provident rerum tenetur numquam quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut illo autem aliquid reprehenderit, quia optio esse et pariatur ratione delectus nulla quasi nostrum incidunt repellendus, molestias neque, veniam voluptatibus sint!</p>
-            
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nobis sed tenetur dolorem. Eum placeat in magnam excepturi ex, esse recusandae, culpa non sapiente nobis sunt necessitatibus aliquam vel vero?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nobis sed tenetur dolorem. Eum placeat in magnam excepturi ex, esse recusandae, culpa non sapiente nobis sunt necessitatibus aliquam vel vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad et rem ea, porro odit repellendus quaerat nulla recusandae magni ex consectetur id voluptatem cum atque beatae officia hic delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae optio, distinctio ab dolor vel illum! Porro, beatae officiis quia nulla libero ab dicta quod quo aliquam debitis atque. Ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente vero adipisci sint! Ea eaque neque sapiente optio maxime? Ea quam esse id nesciunt distinctio dolorem quos accusantium quidem non obcaecati!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }   
+        }
+    </script>
 </body>
 </html>
